@@ -1,0 +1,22 @@
+cc_prebuilt_library_static {
+    name: "libhbm_minigbm",
+    visibility: ["//visibility:public"],
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
+    vendor_available: true,
+    product_available: true,
+    compile_multilib: "both",
+    export_include_dirs: ["include"],
+    target: {
+        android_x86_64: {
+            enabled: true,
+            srcs: ["prebuilts/x86_64/libhbm_minigbm.a"],
+        },
+        android_x86: {
+            enabled: true,
+            srcs: ["prebuilts/x86/libhbm_minigbm.a"],
+        },
+    },
+}
