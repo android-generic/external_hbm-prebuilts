@@ -10,7 +10,7 @@ The repo will focus mostly on `hbm-minigbm`. However, if `hbm` have interesting 
 
 ## How to build
 
-1. Get Rust with Rustup
+### Get Rust with Rustup
 
 It's recommend to uninstall Rust packages that is provided by your linux distro and use `rustup` to install instead
 
@@ -18,7 +18,7 @@ It's recommend to uninstall Rust packages that is provided by your linux distro 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
-2. Install cbindgen
+### Install cbindgen
 
 cbindgen can be installed with
 
@@ -26,7 +26,7 @@ cbindgen can be installed with
 cargo install cbindgen
 ```
 
-2. Follow cargo-ndk instructions to setup the build environment
+### Follow cargo-ndk instructions to setup the build environment
 
 `cargo-ndk` has an instruction on the project's README, you can follow it and get the build environment ready
 
@@ -34,7 +34,7 @@ https://github.com/bbqsrc/cargo-ndk?tab=readme-ov-file#installing
 
 Also remember to download NDK as the `Usage` part pointed out, set `ANDROID_NDK_HOME` to the extracted place if it can't scan your NDK location.
 
-4. Build
+### Build
 
 The following commands will build hbm-minigbm for x86/x86_64 with API 34 and generate hbm_minigbm.h
 
