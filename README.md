@@ -1,7 +1,7 @@
 # Prebuilt hbm for AOSP build, built with cargo-ndk
 
 This is a repo containing prebuilts of olv's [hbm](https://gitlab.freedesktop.org/olv/hbm) project. Currently include:
-- hbm-minigbm static library for x86/x86_64, API level 34 (Android 14)
+- hbm-minigbm static library for x86/x86_64, API level 30 (Android 11)
 - hbm_minigbm.h header created with cbindgen
 
 I created this repo to support hbm on older Android, and also I don't know how to write Android.bp with Rust on Android 14+ yet :p
