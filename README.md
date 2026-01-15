@@ -39,7 +39,7 @@ Also remember to download NDK as the `Usage` part pointed out, set `ANDROID_NDK_
 The following commands will build hbm-minigbm for x86/x86_64 with API 34 and generate hbm_minigbm.h
 
 ```
-cargo ndk -t x86 -t x86_64 -p 34 build --package hbm-minigbm --release
+cargo ndk -t x86 -t x86_64 -P 34 build --package hbm-minigbm --release
 cbindgen -o hbm_minigbm.h hbm-minigbm
 ```
 
